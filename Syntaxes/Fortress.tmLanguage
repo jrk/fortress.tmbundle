@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>fss</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>/\*\*|\{\s*$</string>
+	<key>foldingStopMarker</key>
+	<string>\*\*/|^\s*\}</string>
+	<key>name</key>
+	<string>Fortress</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(if|elif|else|while|do|end|for|then|return)\b</string>
+			<key>name</key>
+			<string>keyword.control.fortress</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(component|export)\b</string>
+			<key>name</key>
+			<string>keyword.fortress</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.untitled</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.fortress</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\(\*[^\)]</string>
+			<key>end</key>
+			<string>\*\)</string>
+			<key>name</key>
+			<string>comment.block.fortress</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\(\*\).*</string>
+			<key>name</key>
+			<string>comment.line.fortress</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.fortress</string>
+	<key>uuid</key>
+	<string>D879D8E9-B560-4618-8FF1-633E7E2AF208</string>
+</dict>
+</plist>
